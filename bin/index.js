@@ -31,19 +31,32 @@ async function main() {
     // console.log(pkg.lastVersion);
     // console.log(lastVer.dependencies);
 
+    const entries = Object.entries(lastVer.dependencies);
+
     let markdown = "";
     if (argv.get("clipboard") === true) {
         markdown += "## Dependencies\n\n";
-        markdown += "|Name|Refactoring|Security Risk|Usage|\n";
-        markdown += "|---|---|---|---|\n";
+
+        if (entries.length === 0) {
+            markdown += "|Name|Refactoring|Security Risk|Usage|\n";
+            markdown += "|---|---|---|---|\n";
+        }
+        else {
+            markdown += "This project have no dependencies.";
+        }
     }
-    
+
     console.log("## Dependencies");
     console.log();
-    console.log("|Name|Refactoring|Security Risk|Usage|");
-    console.log("|---|---|---|---|");
+    if (entries.length === 0) {
+        console.log("|Name|Refactoring|Security Risk|Usage|");
+        console.log("|---|---|---|---|");
+    }
+    else {
+        console.log("This project have no dependencies.");
+    }
 
-    for (const [dep, version] of Object.entries(lastVer.dependencies)) {
+    for (const [dep, version] of entries) {
         const depPkg = await npmReg.package(dep);
         const refac = dep.includes("@slimio") ? "Minor" : "⚠️Major";
         const ver = PREFIX_VERSION.has(version.charAt(0)) ? version.substr(1) : version;
