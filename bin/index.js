@@ -20,24 +20,18 @@ const argv = parseArg([
 
 async function main() {
     const buffer = await readFile(join(process.cwd(), "package.json"));
-    const { name } = JSON.parse(buffer.toString());
+    const { name, dependencies } = JSON.parse(buffer.toString());
     const npmReg = new Registry();
-    // console.log(name);
+    console.log(name);
 
     npmReg.login(process.env.NPM_TOKEN);
-
-    const pkg = await npmReg.package(name);
-    const lastVer = pkg.version(pkg.lastVersion);
-    // console.log(pkg.lastVersion);
-    // console.log(lastVer.dependencies);
-
-    const entries = Object.entries(lastVer.dependencies);
+    const entries = Object.entries(dependencies);
 
     let markdown = "";
     if (argv.get("clipboard") === true) {
         markdown += "## Dependencies\n\n";
 
-        if (entries.length === 0) {
+        if (entries.length > 0) {
             markdown += "|Name|Refactoring|Security Risk|Usage|\n";
             markdown += "|---|---|---|---|\n";
         }
@@ -48,7 +42,7 @@ async function main() {
 
     console.log("## Dependencies");
     console.log();
-    if (entries.length === 0) {
+    if (entries.length > 0) {
         console.log("|Name|Refactoring|Security Risk|Usage|");
         console.log("|---|---|---|---|");
     }
