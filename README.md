@@ -3,24 +3,39 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/SlimIO/is/commit-activity)
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
 
+This tool has been created to answer a README.md need of SlimIO.
+
 ## Requirements
 - Node.js v10 or higher
 
 ## Getting Started
 
-This package is available in the Node Package Repository and can be easily installed with [npm](https://docs.npmjs.com/getting-started/what-is-npm) or [yarn](https://yarnpkg.com).
+Clone and link the project.
 
 ```bash
-$ npm i @slimio/markdown-dependencies
-# or
-$ yarn add @slimio/markdown-dependencies
+$ git clone https://github.com/SlimIO/Markdown-Dependencies.git
+$ cd Markdown-Dependencies
+$ npm link
 ```
 
 ## Usage example
-TBC
+When installed globally the `mddep` executable will be exposed in your terminal
+
+```bash
+$ cd yourProject
+$ mddep
+```
+
+Use the argument `-c` or `clipboard` to copy the stdout to the clipboard.
 
 ## API
 TBC
+
+## Env & token
+To be able to pull private repository create a local `.env` file
+```
+NPM_TOKEN=
+```
 
 ## Dependencies
 
