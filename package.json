@@ -1,7 +1,7 @@
 {
     "name": "@slimio/markdown-dependencies",
     "version": "0.1.0",
-    "description": "",
+    "description": "Create Markdown Dependencies for SlimIO projects",
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
@@ -15,7 +15,7 @@
         "type": "git",
         "url": "git+https://github.com/SlimIO/Markdown-Dependencies.git"
     },
-    "keywords": [],
+    "keywords": ["SlimIO", "markdown", "generator", "tool", "cli"],
     "author": "SlimIO",
     "license": "MIT",
     "bugs": {
@@ -58,7 +58,6 @@
         "functions": 98,
         "branches": 90
     },
-    "preferGlobal": true,
     "bin": {
         "mddep": "./bin/index.js"
     }
