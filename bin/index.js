@@ -25,7 +25,7 @@ async function main() {
     console.log(name);
 
     npmReg.login(process.env.NPM_TOKEN);
-    const entries = Object.entries(dependencies);
+    const entries = Object.entries(dependencies || {});
 
     let markdown = "";
     if (argv.get("clipboard") === true) {
