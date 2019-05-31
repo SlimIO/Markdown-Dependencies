@@ -3,8 +3,6 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/SlimIO/is/commit-activity)
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-
-
 ## Requirements
 - Node.js v10 or higher
 
@@ -23,6 +21,14 @@ TBC
 
 ## API
 TBC
+
+## Dependencies
+
+|Name|Refactoring|Security Risk|Usage|
+|---|---|---|---|
+|[@slimio/arg-parser](https://github.com/SlimIO/ArgParser#readme)|Minor|Low|TBC|
+|[@slimio/npm-registry](https://github.com/SlimIO/npm-registry#readme)|⚠️Major|Low|Npm registry|
+|[clipboardy](https://github.com/sindresorhus/clipboardy#readme)|Minor|High|Copy to clipboard|
 
 ## License
 MIT
