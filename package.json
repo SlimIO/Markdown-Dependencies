@@ -31,6 +31,7 @@
     "dependencies": {
         "@slimio/arg-parser": "^0.3.1",
         "@slimio/npm-registry": "^0.5.0",
+        "@slimio/pretty-json": "^1.0.1",
         "clipboardy": "^2.0.0"
     },
     "devDependencies": {
