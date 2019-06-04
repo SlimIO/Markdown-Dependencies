@@ -29,7 +29,7 @@
     },
     "homepage": "https://github.com/SlimIO/Markdown-Dependencies#readme",
     "dependencies": {
-        "@slimio/arg-parser": "^0.3.1",
+        "@slimio/arg-parser": "^0.3.2",
         "@slimio/npm-registry": "^0.5.0",
         "@slimio/pretty-json": "^1.0.1",
         "clipboardy": "^2.0.0"
