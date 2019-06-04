@@ -41,8 +41,8 @@ NPM_TOKEN=
 
 |Name|Refactoring|Security Risk|Usage|
 |---|---|---|---|
-|[@slimio/arg-parser](https://github.com/SlimIO/ArgParser#readme)|Minor|Low|TBC|
-|[@slimio/npm-registry](https://github.com/SlimIO/npm-registry#readme)|⚠️Major|Low|Npm registry|
+|[@slimio/arg-parser](https://github.com/SlimIO/Arg-parser)|Minor|Low|Script argument parser}|
+|[@slimio/npm-registry](https://github.com/SlimIO/Npm-registry)|Minor|Low|GET data from NPM registry}|
 |[clipboardy](https://github.com/sindresorhus/clipboardy#readme)|Minor|High|Copy to clipboard|
 
 ## License
