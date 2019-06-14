@@ -32,7 +32,8 @@
         "@slimio/arg-parser": "^0.3.2",
         "@slimio/npm-registry": "^0.5.0",
         "@slimio/pretty-json": "^1.0.1",
-        "clipboardy": "^2.0.0"
+        "clipboardy": "^2.0.0",
+        "dotenv": "^8.0.0"
     },
     "devDependencies": {
         "@commitlint/cli": "^8.0.0",
@@ -42,7 +43,6 @@
         "@slimio/psp": "^0.4.0",
         "ava": "^2.0.0",
         "cross-env": "^5.2.0",
-        "dotenv": "^8.0.0",
         "eslint": "^5.16.0",
         "husky": "^2.3.0",
         "jsdoc": "^3.6.2",
