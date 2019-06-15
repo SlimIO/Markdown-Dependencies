@@ -18,6 +18,13 @@ $ cd Markdown-Dependencies
 $ npm link
 ```
 
+Then, create a local `.env` file with a npm access token
+```
+NPM_TOKEN=
+```
+
+> ⚠️ If you dont known how to create an access token, follow [this guide](https://docs.npmjs.com/creating-and-viewing-authentication-tokens)
+
 ## Usage example
 When installed globally the `mddep` executable will be exposed in your terminal
 
@@ -30,12 +37,6 @@ Use the argument `-c` or `clipboard` to copy the stdout to the clipboard.
 
 ## API
 TBC
-
-## Env & token
-To be able to pull private repository create a local `.env` file
-```
-NPM_TOKEN=
-```
 
 ## Dependencies
 
