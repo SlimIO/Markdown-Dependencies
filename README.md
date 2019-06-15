@@ -35,8 +35,9 @@ $ mddep
 
 Use the argument `-c` or `clipboard` to copy the stdout to the clipboard.
 
-## API
-TBC
+## How to complete
+- **Refactoring**: Minor if the project can be easily replaced by another **package** (or by a native implementation).
+- **Security Risk**: Does the project have indirect dependencies? Does it perform operations on http or fs ?
 
 ## Dependencies
 
