@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+"use strict";
+
 // Require Node.js Dependencies
 const { readFile } = require("fs").promises;
 const { join } = require("path");
@@ -59,7 +61,11 @@ const argv = parseArg([
     argDefinition("-c --clipboard", "Copy directly to clipboard"),
     argDefinition("-d --dependency [array=[]]", "Give line of specific dependencies")
 ]);
-
+/**
+ * @async
+ * @function main
+ * @returns {Promise<void>}
+ */
 async function main() {
     if (argv.has("dependency")) {
         if (argv.get("dependency").length === 0) {
