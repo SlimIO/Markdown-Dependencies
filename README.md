@@ -1,7 +1,10 @@
 # markdown-dependencies
-![version](https://img.shields.io/badge/version-0.1.0-blue.svg)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/SlimIO/is/commit-activity)
+![Version](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/SlimIO/Markdown-Dependencies/master/package.json?token=Aeue0P3eryCYRikk9tHZScyXOpqtMvFIks5ca-XwwA%3D%3D&query=$.version&label=Version)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/SlimIO/Markdown-Dependencies/commit-activity)
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
+![dep](https://img.shields.io/david/SlimIO/Markdown-Dependencies)
+![size](https://img.shields.io/github/languages/code-size/SlimIO/Markdown-Dependencies)
+[![Known Vulnerabilities](https://snyk.io//test/github/SlimIO/Markdown-Dependencies/badge.svg?targetFile=package.json)](https://snyk.io//test/github/SlimIO/Markdown-Dependencies?targetFile=package.json)
 
 This tool has been created to create or update the **Dependencies section in README.md** of the SlimIO projects.
 
