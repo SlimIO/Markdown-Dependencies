@@ -21,6 +21,10 @@
         "tool",
         "cli"
     ],
+    "files": [
+        "src",
+        "bin"
+    ],
     "author": "SlimIO",
     "license": "MIT",
     "bugs": {
