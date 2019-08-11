@@ -33,7 +33,7 @@ When installed globally the `mddep` executable will be exposed in your terminal
 
 ```bash
 $ cd yourProject
-$ mddep
+$ mddep generate
 ```
 
 Use the argument `-c` or `clipboard` to copy the stdout to the clipboard.
