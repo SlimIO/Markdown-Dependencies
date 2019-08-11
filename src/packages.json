@@ -1,0 +1,37 @@
+[
+    ["@slimio/addon", ["https://github.com/SlimIO/Addon", "Minor", "Low", "Addon container"]],
+    ["@slimio/addon-factory", ["https://github.com/SlimIO/Addon-Factory", "Minor", "Low", "Addon generator"]],
+    ["@slimio/alert", ["https://github.com/SlimIO/Alert", "Minor", "Low", "Create & manage addon's alerts"]],
+    ["@slimio/arg-parser", ["https://github.com/SlimIO/Arg-parser", "Minor", "Low", "Script argument parser"]],
+    ["@slimio/async-cli-spinner", ["https://github.com/SlimIO/Async-cli-spinner", "Minor", "Low", "Multi async cli spinner"]],
+    ["@slimio/github", ["https://github.com/SlimIO/github", "Minor", "Medium", "Github repositories downloader"]],
+    ["@slimio/is", ["https://github.com/SlimIO/is", "Minor", "Low", "Type checker"]],
+    ["@slimio/lazy", ["https://github.com/SlimIO/Lazy", "Minor", "Low", "Setup lazy props on Objects"]],
+    ["@slimio/Manifest", ["https://github.com/SlimIO/Manifest", "Minor", "Low", "Load & manage SlimIO Manifest"]],
+    ["@slimio/metrics", ["https://github.com/SlimIO/Metrics", "Minor", "Low", "Create & manage addon's metrics"]],
+    ["@slimio/npm-registry", ["https://github.com/SlimIO/Npm-registry", "Minor", "Low", "GET data from NPM registry"]],
+    ["@slimio/pretty-json", ["https://github.com/SlimIO/Pretty-JSON", "Minor", "Low", "Stdout beautified JSON"]],
+    ["@slimio/safe-emitter", ["https://github.com/SlimIO/Safe-emitter", "Minor", "Medium", "Node.js Safe Emitter"]],
+    ["@slimio/tcp-sdk", ["https://github.com/SlimIO/Tcp-Sdk", "Minor", "Low", "SlimIO TCP-Sdk"]],
+    ["@slimio/timer", ["https://github.com/SlimIO/Timer", "Minor", "Low", "Driftless interval"]],
+    ["@slimio/unzipper", ["https://github.com/SlimIO/unzipper", "Minor", "High", "Modern yauzl wrapper used to unzip .zip archive in extract() method."]],
+    ["@slimio/units", ["https://github.com/SlimIO/Units", "Minor", "Low", "Bunch of units for metrics"]],
+    ["@slimio/utils", ["https://github.com/SlimIO/Utils", "Minor", "Low", "Bunch of useful functions"]],
+
+    ["make-promise-safe", ["https://github.com/mcollina/make-promises-safe", "⚠️Major", "Low", "Force Node.js [DEP00018](https://nodejs.org/dist/latest-v8.x/docs/api/deprecations.html#deprecations_dep0018_unhandled_promise_rejections)"]],
+    ["dotenv", ["https://github.com/motdotla/dotenv", "Minor", "Low", "Env file"]],
+
+    ["polka", ["https://github.com/lukeed/polka", "⚠️Major", "Low", "Native HTTP server"]],
+    ["@polka/send-type", ["https://github.com/lukeed/polka", "Minor", "Low", "HTTP response helper"]],
+
+    ["lodash.get", ["https://github.com/lodash/lodash", "Minor", "Low", "Get a value"]],
+    ["lodash.set", ["https://github.com/lodash/lodash", "Minor", "Low", "Set a value"]],
+    ["lodash.clonedeep", ["https://github.com/lodash/lodash", "Minor", "Low", "Clone deep Objects"]],
+
+    ["repos", ["https://github.com/jonschlinkert/repos", "⚠️Major", "Low", "Get all GIT repositories"]],
+    ["kleur", ["https://github.com/lukeed/kleur", "Minor", "Low", "TTY color"]],
+    ["httpie", ["https://github.com/jakubroztocil/httpie", "Minor", "Low", "HTTP request"]],
+    ["zen-observable", ["https://github.com/zenparsing/zen-observable", "Minor", "Low", "Observable Implementation"]],
+    ["body-parser", ["https://github.com/expressjs/body-parser", "⚠️Major", "High", "Body Parser"]],
+    ["semver", ["https://github.com/npm/node-semver", "⚠️Major", "Low", "SemVer validation"]]
+]
