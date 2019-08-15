@@ -14,6 +14,7 @@ const Registry = require("@slimio/npm-registry");
 const prettyJSON = require("@slimio/pretty-json");
 const clipboardy = require("clipboardy");
 const { white, red, cyan } = require("kleur");
+const marked = require("marked");
 const sade = require("sade");
 
 // Require Internal Packages
@@ -66,6 +67,31 @@ prog
     .describe("generate markdown table for current project dependencies")
     .option("-c, --clipboard", "copy to clipboard", false)
     .action(async(opts) => {
+        const currentDependencies = Object.create(null);
+        {
+            const str = await readFile(join(process.cwd(), "README.md"), "utf-8");
+            const tokens = marked.lexer(str);
+
+            for (let id = 0; id < tokens.length; id++) {
+                const row = tokens[id];
+                if (row.type === "heading" && row.text === "Dependencies") {
+                    const nextRow = tokens[id + 1];
+                    if (nextRow.type !== "table") {
+                        break;
+                    }
+
+                    nextRow.cells.reduce((prev, [fullName, refactoring, security, usage]) => {
+                        const [, name, url] = /\[(.*)\]\((.*)\)/g.exec(fullName);
+                        prev[name] = { url, refactoring, security, usage };
+
+                        return prev;
+                    }, currentDependencies);
+
+                    break;
+                }
+            }
+        }
+
         const buffer = await readFile(join(process.cwd(), "package.json"));
         const { name, dependencies } = JSON.parse(buffer.toString());
         const npmReg = new Registry();
@@ -85,6 +111,17 @@ prog
         console.log(markdown);
 
         for (const [dep, version] of entries) {
+            if (Reflect.has(currentDependencies, dep)) {
+                const { url, refactoring, security, usage } = currentDependencies[dep];
+
+                const line = `|[${dep}](${url})|${refactoring}|${security}|${usage}|`;
+                if (opts.clipboard === true) {
+                    markdown += `${line}\n`;
+                }
+                console.log(line);
+                continue;
+            }
+
             // eslint-disable-next-line
             let [homepage = "", refactoring = "Minor", securityRisk = "", usage = "TBC"] = KNOW_DEPS.get(dep) || [];
             if (!KNOW_DEPS.has(dep)) {

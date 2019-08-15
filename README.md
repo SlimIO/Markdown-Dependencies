@@ -46,8 +46,8 @@ Use the argument `-c` or `clipboard` to copy the stdout to the clipboard.
 
 |Name|Refactoring|Security Risk|Usage|
 |---|---|---|---|
-|[@slimio/arg-parser](https://github.com/SlimIO/Arg-parser)|Minor|Low|Script argument parser}|
-|[@slimio/npm-registry](https://github.com/SlimIO/Npm-registry)|Minor|Low|GET data from NPM registry}|
+|[@slimio/arg-parser](https://github.com/SlimIO/Arg-parser)|Minor|Low|Script argument parser|
+|[@slimio/npm-registry](https://github.com/SlimIO/Npm-registry)|Minor|Low|GET data from NPM registry|
 |[clipboardy](https://github.com/sindresorhus/clipboardy#readme)|Minor|High|Copy to clipboard|
 
 ## License
