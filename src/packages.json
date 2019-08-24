@@ -37,7 +37,7 @@
     ["@slimio/ipc", ["https://github.com/SlimIO/ipc"], "⚠️Major", "High", "easy end-to-end IPC (Inter Process Communication)"],
     ["@slimio/arg-checker", ["https://github.com/SlimIO/arg-checker", "Minor", "Low", "Argument Checker"]],
 
-    ["make-promise-safe", ["https://github.com/mcollina/make-promises-safe", "⚠️Major", "Low", "Force Node.js [DEP00018](https://nodejs.org/dist/latest-v8.x/docs/api/deprecations.html#deprecations_dep0018_unhandled_promise_rejections)"]],
+    ["make-promises-safe", ["https://github.com/mcollina/make-promises-safe", "⚠️Major", "Low", "Force Node.js [DEP00018](https://nodejs.org/dist/latest-v8.x/docs/api/deprecations.html#deprecations_dep0018_unhandled_promise_rejections)"]],
     ["dotenv", ["https://github.com/motdotla/dotenv", "Minor", "Low", "Loads environment variables from .env"]],
 
     ["polka", ["https://github.com/lukeed/polka", "⚠️Major", "Low", "A micro and light web server so fast, it'll make you dance!"]],
