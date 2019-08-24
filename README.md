@@ -8,6 +8,10 @@
 
 This tool has been created to create or update the **Dependencies section in README.md** of the SlimIO projects.
 
+<p align="center">
+    <img src="https://i.imgur.com/LIi9Wh7.png">
+</p>
+
 ## Requirements
 - [Node.js](https://nodejs.org/en/) v10 or higher
 
@@ -46,9 +50,14 @@ Use the argument `-c` or `clipboard` to copy the stdout to the clipboard.
 
 |Name|Refactoring|Security Risk|Usage|
 |---|---|---|---|
-|[@slimio/arg-parser](https://github.com/SlimIO/Arg-parser)|Minor|Low|Script argument parser|
 |[@slimio/npm-registry](https://github.com/SlimIO/Npm-registry)|Minor|Low|GET data from NPM registry|
+|[@slimio/pretty-json](https://github.com/SlimIO/Pretty-JSON)|Minor|Low|Stdout beautified JSON|
 |[clipboardy](https://github.com/sindresorhus/clipboardy#readme)|Minor|High|Copy to clipboard|
+|[dotenv](https://github.com/motdotla/dotenv)|Minor|Low|Loads environment variables from .env|
+|[kleur](https://github.com/lukeed/kleur)|Minor|Low|The fastest Node.js library for formatting terminal text with ANSI colors|
+|[make-promises-safe](https://github.com/mcollina/make-promises-safe#readme)|Minor|Low|Force Node.js [DEP00018](https://nodejs.org/dist/latest-v8.x/docs/api/deprecations.html#deprecations_dep0018_unhandled_promise_rejections)|
+|[marked](https://marked.js.org)|Minor|Low|Markdown tokenizer|
+|[sade](https://github.com/lukeed/sade#readme)|Minor|Low|Sade is a small but powerful tool for building command-line interface (CLI) applications for Node.js that are fast, responsive, and helpful!|
 
 ## License
 MIT
