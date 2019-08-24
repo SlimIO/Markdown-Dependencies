@@ -47,11 +47,20 @@
     ["lodash.set", ["https://github.com/lodash/lodash", "Minor", "Low", "Set deep a value"]],
     ["lodash.clonedeep", ["https://github.com/lodash/lodash", "Minor", "Low", "Clone deep an Object"]],
 
+    ["qoa", ["https://github.com/klaussinani/qoa#readme", "Minor", "Low", "Minimal interactive command-line prompts"]],
+    ["premove", ["https://github.com/lukeed/premove#readme", "Minor", "Low", "Effectively rm -rf for Node.js"]],
+    ["bytes", ["https://github.com/visionmedia/bytes.js#readme", "Minor", "Low", "Utility to parse a string bytes (ex: 1TB) to bytes (1099511627776) and vice-versa."]],
+    ["zup", ["https://github.com/mscdex/zup#readme", "Minor", "Low", "A simple and fast template engine for Node.js"]],
     ["repos", ["https://github.com/jonschlinkert/repos", "Minor", "Low", "Fetch github repositories"]],
     ["fetch-github-repositories", ["https://github.com/fraxken/fetch-github-repositories", "Minor", "Low", "Fetch github repositories"]],
     ["kleur", ["https://github.com/lukeed/kleur", "Minor", "Low", "The fastest Node.js library for formatting terminal text with ANSI colors"]],
     ["httpie", ["https://github.com/lukeed/httpie#readme", "Minor", "Low", "A Node.js HTTP client as easy as pie!"]],
     ["zen-observable", ["https://github.com/zenparsing/zen-observable", "Minor", "Low", "ECMAScript Observable implementation"]],
     ["body-parser", ["https://github.com/expressjs/body-parser", "⚠️Major", "High", "HTTP Body Parser"]],
-    ["semver", ["https://github.com/npm/node-semver", "⚠️Major", "Low", "Semver parser/utilities for node"]]
+    ["ms", ["https://github.com/zeit/ms#readme", "Minor", "Low", "Convert various time formats to milliseconds."]],
+    ["semver", ["https://github.com/npm/node-semver", "⚠️Major", "Low", "Semver parser/utilities for node"]],
+    ["uuid", ["https://github.com/kelektiv/node-uuid#readme", "Minor", "Low", "Simple, fast generation of RFC4122 UUIDS."]],
+    ["clipboardy", ["https://github.com/sindresorhus/clipboardy#readme", "Minor", "Low", "Access the system clipboard (copy/paste)"]],
+    ["sade", ["https://github.com/lukeed/sade#readme", "Minor", "Low", "Sade is a small but powerful tool for building command-line interface (CLI) applications for Node.js that are fast, responsive, and helpful!"]],
+    ["is-snake-case", ["https://github.com/sunitJindal/is-snake-case#readme", "Minor", "Low", "Verify that a given string follows snake case naming."]]
 ]
