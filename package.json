@@ -35,7 +35,7 @@
         "@slimio/npm-registry": "^0.5.0",
         "@slimio/pretty-json": "^1.0.1",
         "clipboardy": "^2.0.0",
-        "dotenv": "^8.0.0",
+        "dotenv": "^8.1.0",
         "kleur": "^3.0.3",
         "make-promises-safe": "^5.0.0",
         "marked": "^0.7.0",
