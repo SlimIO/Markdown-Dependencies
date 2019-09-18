@@ -25,12 +25,14 @@ $ cd Markdown-Dependencies
 $ npm link
 ```
 
-Then, create a local `.env` file with a npm access token
+## Environment Variables
+
+To configure the project you have to register (set) environment variables on your system. These variables can be set in a **.env** file (that file must be created at the root of the project).
 ```
 NPM_TOKEN=
 ```
 
-> ⚠️ If you dont known how to create an access token, follow [this guide](https://docs.npmjs.com/creating-and-viewing-authentication-tokens)
+To known how to get a **NPM_TOKEN** or how to register environment variables follow our [Governance Guide](https://github.com/SlimIO/Governance/blob/master/docs/tooling.md#environment-variables).
 
 ## Usage example
 When installed globally the `mddep` executable will be exposed in your terminal
