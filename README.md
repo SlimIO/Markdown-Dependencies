@@ -5,7 +5,8 @@
 ![dep](https://img.shields.io/david/SlimIO/Markdown-Dependencies)
 ![size](https://img.shields.io/github/languages/code-size/SlimIO/Markdown-Dependencies)
 [![Known Vulnerabilities](https://snyk.io//test/github/SlimIO/Markdown-Dependencies/badge.svg?targetFile=package.json)](https://snyk.io//test/github/SlimIO/Markdown-Dependencies?targetFile=package.json)
-[![Build Status](https://travis-ci.com/SlimIO/Markdown-Dependencies.svg?branch=master)](https://travis-ci.com/SlimIO/Markdown-Dependencies) [![Greenkeeper badge](https://badges.greenkeeper.io/SlimIO/Markdown-Dependencies.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.com/SlimIO/Markdown-Dependencies.svg?branch=master)](https://travis-ci.com/SlimIO/Markdown-Dependencies)
+[![Greenkeeper badge](https://badges.greenkeeper.io/SlimIO/Markdown-Dependencies.svg)](https://greenkeeper.io/)
 
 This tool has been created to create or update the **Dependencies section in README.md** of the SlimIO projects.
 
