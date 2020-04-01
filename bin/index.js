@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 "use strict";
 
-require("make-promises-safe");
-
 // Require Node.js Dependencies
 const { readFile } = require("fs").promises;
 const { join } = require("path");
 
+require("make-promises-safe");
 require("dotenv").config({ path: join(__dirname, "..", ".env") });
 
 // Require Third-party Dependencies
@@ -97,7 +96,9 @@ prog
         const npmReg = new Registry();
         console.log(white().bold(`\n > Generating markdown dependencies for: ${cyan().bold(name)}\n`));
 
-        npmReg.login(process.env.NPM_TOKEN);
+        if (typeof process.env.NPM_TOKEN === "string") {
+            npmReg.login(process.env.NPM_TOKEN);
+        }
         const entries = Object.entries(dependencies || {});
 
         let markdown = "## Dependencies\n\n";
