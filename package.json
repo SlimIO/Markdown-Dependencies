@@ -38,7 +38,7 @@
         "dotenv": "^8.2.0",
         "kleur": "^3.0.3",
         "make-promises-safe": "^5.1.0",
-        "marked": "^1.1.0",
+        "marked": "^2.0.5",
         "sade": "^1.7.3"
     },
     "devDependencies": {
